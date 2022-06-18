@@ -18,23 +18,6 @@
 * 屏幕共享（基于图片）
 * 视频通话（基于webrtc的p2p视频通话）
 
-## 后端
-[代码仓库](https://github.com/kone-net/go-chat)
-go中协程是非常轻量级的。在每个client接入的时候，为每一个client开启一个协程，能够在单机实现更大的并发。同时go的channel，可以非常完美的解耦client接入和消息的转发等操作。
-
-通过go-chat，可以掌握channel的和Select的配合使用，ORM框架的使用，web框架Gin的使用，配置管理，日志操作，还包括proto buffer协议的使用，等一些列项目中常用的技术。
-
-
-### 后端技术和框架
-* web框架Gin
-* 长连接WebSocket
-* 日志框架Uber的zap
-* 配置管理viper
-* ORM框架gorm
-* 通讯协议Google的proto buffer
-* makefile 的编写
-* 数据库MySQL
-* 图片文件二进制操作
 
 ## 前端
 基于react,UI和基本组件是使用ant design。可以很方便搭建前端界面。
@@ -60,19 +43,4 @@ https://github.com/kone-net/go-chat-web
 * WebRTC的p2p视频通话
 
 
-### 截图
-* 语音，文字，图片，视频消息
-![go-chat-panel](/public/screenshot/go-chat-panel.jpeg)
-
-* 视频通话
-![video-chat](/public/screenshot/video-chat.png)
-
-* 屏幕共享
-![screen-share](/public/screenshot/screen-share.png)
-
-## 分支说明
-one-file分支：
-该分支是所有逻辑都在一个文件实现，包括语音，文字，图片，视频消息，视频通话，语音电话，屏幕共享。
-main分支：
-是将各个部分进行拆分。将Panel拆分成，左、中、右。又将右边的发送文件，图片，文件拆分成更小的组件。
 
