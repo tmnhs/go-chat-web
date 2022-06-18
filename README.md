@@ -23,8 +23,7 @@
 基于react,UI和基本组件是使用ant design。可以很方便搭建前端界面。
 
 界面选择单页框架可以更加方便写聊天界面，比如像消息提醒，可以在一个界面接受到消息进行提醒，不会因为换页面或者查看其他内容影响消息接受。
-[前端代码仓库](https://github.com/kone-net/go-chat-web)：
-https://github.com/kone-net/go-chat-web
+
 
 
 ### 前端技术和框架
